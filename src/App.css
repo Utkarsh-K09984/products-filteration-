@@ -1,0 +1,30 @@
+body {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh; /* Ensure the layout takes the full height of the viewport */
+}
+
+.sidebar {
+    
+    width: 20%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #f8f8f8;
+    border-right: 1px solid #e5e5e5;
+    z-index: 1000;
+    overflow-y: auto; /* Add scrolling if the content overflows */
+}
+
+.main-content {
+    margin-left: 20%; /* Adjust to match the sidebar width */
+    width: 80%; /* Remaining space for the main content */
+    padding: 20px;
+    overflow-y: auto; /* Add scrolling for the main content if needed */
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Add spacing between sections */
+}
